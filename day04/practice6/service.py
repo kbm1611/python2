@@ -9,8 +9,6 @@ class UsedCarTradeService:
         self.model = None
         self.poly = None
         self.scaler = None
-        self.degree = None
-        self.alpha = None
         self.r2 = None
 
     # 머신 러닝 함수
@@ -77,8 +75,6 @@ class UsedCarTradeService:
         self.model = best_optimization['model']
         self.poly = best_optimization['poly']
         self.scaler = best_optimization['scaler']
-        self.degree = best_optimization['degree']
-        self.alpha = best_optimization['alpha']
         self.r2 = best_optimization['r2']
 
         return True
