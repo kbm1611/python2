@@ -33,7 +33,7 @@ for degree in [1,2,3,4,5]:
     test_scaled = ss.transform( test_poly )
 
     # [3] 로그손실 또는 힌지손실 기반의 규제 하이퍼파라미터
-    sc = SGDClassifier( loss='log_loss', max_iter=100, random_state=442, tol=None )
+    sc = SGDClassifier( loss='log_loss', max_iter=100, random_state=42, tol=None )
     sc.fit( train_scaled, train_target )
     train_score = sc.score( train_scaled, train_target )
     test_score = sc.score( test_scaled, test_target )

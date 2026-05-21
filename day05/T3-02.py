@@ -31,7 +31,7 @@ test_scaled = ss.transform( test_input )
 # [2] SGDClassifier, 분류 모델
 from sklearn.linear_model import SGDClassifier
 # loss = 'log_loss' : 로스 함수
-# random_state : SGD가 전체 ㄷ이터 학습이 아닌 일부 자료(미니배치) 가지고 학습하는데 사용되는 분리 기준( 난수값 )
+# random_state : SGD가 전체 데이터 학습이 아닌 일부 자료(미니배치) 가지고 학습하는데 사용되는 분리 기준( 난수값 )
 # max_iter : (반복)계산 횟수 # 미니 배치이므로 전체 데이터셋을 '10'이면 10 반복 학습하여 모델 성공 향상( 에포크 )
 # tol = None : 최적의 정확도를 찾아도 계속 반복학습 설정
 sc = SGDClassifier( loss= 'log_loss', random_state = 42, max_iter = 10, tol=None )
